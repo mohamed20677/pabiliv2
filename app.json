@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Pabili", "slug": "pabili", "version": "2.0.0", "orientation": "portrait",
+    "userInterfaceStyle": "light", "platforms": ["android", "ios"],
+    "splash": { "backgroundColor": "#0E7C5B", "resizeMode": "contain" },
+    "android": {
+      "package": "com.pabili.delivery", "versionCode": 2,
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "CAMERA"],
+      "config": { "googleMaps": { "apiKey": "YOUR_GOOGLE_MAPS_API_KEY" } }
+    },
+    "plugins": [
+      ["expo-location", { "locationWhenInUsePermission": "Pabili uses your location to find stores and shoppers near you." }],
+      ["expo-image-picker", { "photosPermission": "Choose photos for your documents.", "cameraPermission": "Take photos of items and documents." }]
+    ]
+  }
+}
